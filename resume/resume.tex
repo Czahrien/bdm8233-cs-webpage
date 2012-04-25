@@ -1,0 +1,80 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Benjamin D. Mayes}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% address begins here
+% Again, the address lines must be centered over entire width of resume:
+ \moveleft.5\hoffset\centerline{6000 Reynolds Drive \#1242}
+ \moveleft.5\hoffset\centerline{Rochester, NY 14623}
+ \moveleft.5\hoffset\centerline{Phone (cell): (215) 595-3745}
+ \moveleft.5\hoffset\centerline{Email: \tt{bdm8233@rit.edu}}
+
+\begin{resume}
+ 
+%\section{OBJECTIVE} To further my education via a cooperative education experience in the winter or spring.
+ 
+
+\section{EDUCATION} {\sl Bachelor of Science, Master of Science} Computer Science \\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+                Rochester Institute of Technology, Rochester, NY, 
+                expected May 2013 \\
+                Major: Computer Science \\
+                Minors: Mathematics (in progress), Psychology (in progress) \\
+                GPA: $3.97/4.00$
+ 
+ 
+\section{COMPUTER \\ SKILLS} {\sl Languages:} C, C++, Haskell, Java, Standard ML, Python, Ruby, x86 assembly, MIPS assembly, Bash, \LaTeX \\
+                {\sl Operating System Experience:} Linux, Mac OS X, Windows, Solaris
+ 
+\section{PROJECT WORK}
+                 {\sl Cumulonimbus:} 32-bit x86 operating system written from scratch. (C, x86 assembly) (Spring 2011)
+                 \begin{itemize} \itemsep -2pt
+                    \item VESA drivers and a graphics library built on top of them.
+                    \item Display and input multiplexing system built on top of the process system.
+                    \item Mouse and keyboard drivers.
+                    \item Math library using the x87 floating point unit.
+                    \item Overhauled build tree to organize the monolithic kernel and make it more modular.
+                  \end{itemize}
+
+                  {\sl archlib:} A library for CPU simulation. (C++) (Summer 2011)
+                  \begin{itemize} \itemsep -2pt
+                    \item Took code written for Sun's C compiler and ported it to compile under GCC 4.X.
+                  \end{itemize}
+
+                  {\sl Voting Manipulation Framework:} A framework for experimenting with various methods of election manipulation. (C++) (Summer 2010)
+                  \begin{itemize} \itemsep -2pt
+                    \item Implemented the concepts of a generic vote and a generic voting system.
+                    \item Implemented several voting systems with the generic framework.
+                    \item Provided the ability to modify an election's votes and candidates on the fly. 
+                  \end{itemize}
+                    
+\section{EXPERIENCE} {\sl CSI Undergraduate Research Fellow} \hfill            Summer 2010 \\
+                 RIT, Rochester, NY
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                    \item Read current research on computational complexity of different forms of election manipulation.
+                    \item Developed a framework for simulating election manipulation.
+                    \item Presented findings at the RIT Undergraduate Research Symposium.
+                \end{itemize}
+ 
+                {\sl Computer Science Theory Tutor} \hfill     Fall 2010, Winter-Spring 2012\\
+                 RIT, Rochester, NY
+                 \begin{itemize} \itemsep -2pt
+                 \item Tutored students on topics in theoretical Computer Science.
+                \end{itemize}
+
+                {\sl Student Lab Instructor} \hfill            Fall 2011 (Python), Winter-Spring 2012 (C++) \\
+                RIT, Rochester, NY
+                 \begin{itemize}  \itemsep -2pt %reduce space between items
+                 \item Assisted Computer Science students with their lab work both inside and outside of the lab.
+                 \item Graded submitted lab work and provided feedback. 
+                \end{itemize} 
+\end{resume}
+\end{document}
